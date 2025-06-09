@@ -913,7 +913,11 @@ in error messages.
 .. option:: --pretty
 
     Use visually nicer output in error messages: use soft word wrap,
-    show source code snippets, and show error location markers.
+    show source code snippets, and show error location markers, enabled by default::
+
+        foo.py:13: error: List item 0 has incompatible type "str"; expected "int"  [list-item]
+            aa = ["x"]
+                  ^~~
 
 .. option:: --no-color-output
 
