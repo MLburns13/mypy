@@ -1354,6 +1354,10 @@ def process_options(
 
     options = Options()
     strict_option_set = False
+    if not hasattr(args, "pretty"):
+        options.pretty = True
+    else:
+        options.pretty = args.pretty
 
     def set_strict_flags() -> None:
         nonlocal strict_option_set
