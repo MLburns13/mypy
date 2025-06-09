@@ -1354,6 +1354,7 @@ def process_options(
 
     options = Options()
     strict_option_set = False
+    # Prevent default attribute for pretty from being overwritten
     if not hasattr(args, "pretty"):
         options.pretty = True
     else:
